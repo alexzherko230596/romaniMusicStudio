@@ -1,0 +1,493 @@
+@import '../../variables.module.scss';
+
+.studio{
+   padding-top: 340px;
+
+    &__wrapper{
+        margin-top: 64px;
+        position: relative;
+
+        &_img{
+            width: 486px;
+            height: 498px;
+        }
+
+        &__text{
+            font-size: 20px;
+            line-height: 140%;
+            color: $white;
+            margin-left: 24px;
+            letter-spacing: .3px;
+            flex-direction: column;
+
+            p{
+                margin-top: 10px;
+            }
+
+            p:first-child{
+                margin-top: 0px;
+            }
+
+            span{
+                color: $yellow
+            }
+        }
+
+        &__textSecondBlock{
+            position: absolute;
+            top: 350px;
+            left: 384px;
+            align-items: center;
+
+            &_img{
+                width: 289px;
+                height: 280px;
+            }
+
+            &_text{
+                font-size: 20px;
+                line-height: 140%;
+                color: $white;
+                margin-left: 24px;
+                letter-spacing: .3px;
+                flex-direction: column;
+
+                p{
+                    margin-top: 10px;
+                }
+    
+                p:first-child{
+                    margin-top: 0px;
+                }
+    
+                span{
+                    color: $yellow
+                }
+            }
+        }
+
+        &__background{
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            z-index: -1;
+            overflow: hidden;
+
+            &_img{
+
+            }
+        }
+
+        &__advantages{
+            position: absolute;
+            top: -550px;
+            width: 100%;
+            border: 1px solid $yellow;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 0px 40px;
+            padding: 53px 0px;
+            justify-content: space-around;
+            backdrop-filter: blur(24px);
+
+            &__block{
+                flex-direction: column;
+                width: 314px;
+                align-items: center;
+
+                &__imageForm{
+                    width: 120px;
+                    height: 120px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                &_text{
+                    margin-top: 32px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: $white;
+                    display: flex;
+                }
+                &_textMobile{
+                    margin-top: 32px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: $white;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .studio{
+
+        padding-top: 190px;
+     
+         &__wrapper{
+
+            &__text{
+                font-size: 18px;
+            }
+
+            &__textSecondBlock{
+                top: 290px;
+                left: 384px;
+    
+                &_text{
+                    font-size: 18px;
+                }
+            }
+
+            &__advantages{
+
+                padding: 36px 0px;
+                top: -450px;
+
+                &__block{
+
+
+                &__imageForm{
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                    padding: 0px 12px;
+                    &_text{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .studio{
+        padding-top: 190px;
+
+         &__wrapper{
+
+            &__text{
+                font-size: 16px;
+            }
+
+            &__textSecondBlock{
+                top: 280px;
+                left: 384px;
+    
+                &_text{
+                    font-size: 16px;
+                }
+            }
+
+            &__advantages{
+
+                padding: 36px 0px;
+                top: -450px;
+
+                &__block{
+
+
+                &__imageForm{
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                    padding: 0px 12px;
+                    &_text{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .studio{
+     
+         &__wrapper{
+            align-items: flex-start;
+
+            &__text{
+                font-size: 16px;
+            }
+
+            &__textSecondBlock{
+                top: 320px;
+                left: 244px;
+    
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .studio{
+        padding-top: 180px;
+
+         &__wrapper{
+            margin-top: 48px;
+            align-items: center;
+
+            &__text{
+                font-size: 16px;
+            }
+
+            &_img{
+                width: 50%;
+                height: 100%;
+            }
+
+            &__background{
+                position: absolute;
+                top: 0px;
+                right: 10%;
+                z-index: -1;
+                overflow: hidden;
+    
+                &_img{
+    
+                }
+            }
+
+            &__textSecondBlock{
+                top: 280px;
+                left: 384px;
+                display: none;
+    
+                &_text{
+                    font-size: 16px;
+                }
+
+                &_img{
+                    width: 289px;
+                    height: 280px;
+                    display: none;
+                }
+            }
+
+            &__advantages{
+
+                padding: 20px 0px;
+                top: -400px;
+
+                &__block{
+
+
+                &__imageForm{
+                    width: 72px;
+                    height: 72px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+
+                    padding: 0px 12px;
+                    &_text{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .studio{
+        padding-top: 100px;
+
+         &__wrapper{
+            margin-top: 48px;
+            align-items: center;
+            flex-direction: column;
+
+            &__text{
+                font-size: 16px;
+                margin: 24px 0px 0px 0px;
+            }
+
+            &_img{
+                width: 100%;
+                max-width: 500px;
+                height: 100%;
+            }
+
+            &__background{
+                position: absolute;
+                top: 0px;
+                right: 10%;
+                z-index: -1;
+                overflow: hidden;
+    
+                &_img{
+    
+                }
+            }
+
+            &__textSecondBlock{
+                top: 280px;
+                left: 384px;
+                display: none;
+    
+                &_text{
+                    font-size: 16px;
+                }
+
+                &_img{
+                    width: 289px;
+                    height: 280px;
+                    display: none;
+                }
+            }
+
+            &__advantages{
+
+                padding: 20px 0px;
+                top: -350px;
+
+                &__block{
+
+
+                &__imageForm{
+                    width: 62px;
+                    height: 62px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 48px;
+                        height: 48px;
+                    }
+                    }
+
+                    &_text{
+                        display: none;
+                    }
+
+                    &_textMobile{
+                        margin-top: 16px;
+                        text-align: center;
+                        font-size: 16px;
+                        color: $white;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .studio{
+        padding-top: 64px;
+
+         &__wrapper{
+
+            &__text{
+                font-size: 15px;
+                margin: 24px 0px 0px 0px;
+            }
+
+            &__background{
+                position: absolute;
+                top: 10px;
+                right: 1%;
+                z-index: -1;
+                overflow: hidden;
+    
+                &_img{
+    
+                }
+            }
+
+            &__textSecondBlock{
+                top: 280px;
+                left: 384px;
+                display: none;
+    
+                &_text{
+                    font-size: 16px;
+                }
+
+                &_img{
+                    width: 289px;
+                    height: 280px;
+                    display: none;
+                }
+            }
+
+            &__advantages{
+
+                padding: 20px 0px;
+                top: -350px;
+                display: none;
+
+                &__block{
+
+
+                &__imageForm{
+                    width: 62px;
+                    height: 62px;
+                    border: 1px solid #C99F62;
+                    border-radius: 100px;
+                    align-items: center;
+                    justify-content: center;
+
+                    &_img{
+                        width: 48px;
+                        height: 48px;
+                    }
+                    }
+
+                    &_text{
+                        display: none;
+                    }
+
+                    &_textMobile{
+                        margin-top: 16px;
+                        text-align: center;
+                        font-size: 16px;
+                        color: $white;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

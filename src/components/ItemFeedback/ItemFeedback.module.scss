@@ -1,0 +1,179 @@
+@import '../../variables.module.scss';
+
+.feedback{
+    color: $white;
+    margin-top: 32px;
+    width: 100%;
+    flex-direction: column;
+    &__wrapper{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &__mainBlock{
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            min-height: 760px;
+            max-height: 760px;
+            justify-content: center;
+
+            &_title{
+                margin-top: 24px;
+                font-size: 24px;
+            }
+
+            &_text{
+                font-size: 18px;
+                line-height: 23px;
+                margin-top: 24px;
+            }
+
+            &_logo{
+                width: 258px;
+                height: 340px;
+            }
+            &_social{
+                margin-top: 24px;
+                width: 40px;
+                height: 40px;
+                border: 1px solid $yellow;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 50px;
+            }
+        }
+
+        &__secondaryBlock{
+            width: 25%;
+            flex-direction: column;
+            align-items: center;
+            opacity: 85%;
+
+            &_title{
+                margin-top: 24px;
+                font-size: 14px;
+            }
+
+            &_text{
+                font-size: 12px;
+                line-height: 15px;
+                margin-top: 12px;
+            }
+
+            &_logo{
+                width: 150px;
+                height: 196px;
+            }
+
+            &_social{
+                margin-top: 16px;
+                width: 40px;
+                height: 40px;
+                border: 1px solid $yellow;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    &__arrows{
+        flex-direction: row;
+        margin-top: 24px;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+
+        &_arrowLeft{
+            width: 21px;
+            height: 31px;
+            cursor: pointer;
+        }
+
+        &_count{
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: 0.1px;
+            margin: 0px 12px;
+        }
+
+        &_arrowRight{
+            width: 21px;
+            height: 31px;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .feedback{
+
+        &__wrapper{
+
+            &__mainBlock{
+                width: 45%;
+                min-height: 760px;
+                max-height: 860px;
+    
+                &_title{
+                    margin-top: 12px;
+                    font-size: 24px;
+                }
+    
+                &_text{
+                    font-size: 14px;
+                    line-height: 23px;
+                    margin-top: 12px;
+                }
+    
+                &_logo{
+                    width: 228px;
+                    height: 320px;
+                }
+                &_social{
+                    margin-top: 24px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            &__secondaryBlock{
+                width: 25%;
+                flex-direction: column;
+                align-items: center;
+                opacity: 85%;
+    
+                &_title{
+                    margin-top: 24px;
+                    font-size: 14px;
+                }
+    
+                &_text{
+                    font-size: 10px;
+                    line-height: 15px;
+                    margin-top: 12px;
+                }
+    
+                &_logo{
+                    width: 120px;
+                    height: 150px;
+                }
+    
+                &_social{
+                    margin-top: 16px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $yellow;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}

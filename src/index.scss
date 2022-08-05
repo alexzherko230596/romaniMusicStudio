@@ -1,0 +1,83 @@
+@import './variables.module.scss';
+body {
+  margin: 0px;
+  padding-top: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $main;
+  color: #111111;
+  font-family: 'Gabriela', serif;
+}
+
+div{
+  display: flex;
+}
+
+.g-container{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0px 25px;
+  flex-direction: column;
+  position: relative;
+}
+
+.g-wrapperScreens{
+  width: 100%;
+  flex-direction: column;
+}
+
+p{
+  margin: 0;
+}
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
+// .eWjCzc{
+//   background-color: rgba(103,58,183, 1);
+//   color: $yellow;
+// }
+
+// .jhmYzC{
+//   background-color: white;
+// }
+
+.rec.rec-arrow {
+  color: $white;
+  background-color: rgba(201, 159, 98, .5);
+}
+
+.rec.rec-arrow:focus:enabled {
+  color: $white;
+  background-color: rgba(201, 159, 98, .5);
+}
+.rec.rec-arrow:focus:hover {
+  color: $white;
+  background-color: rgba(201, 159, 98, 1);
+}
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
+.rec.rec-dot{
+  background-color: $yellow;
+}
+.rec.rec-dot.rec-dot_active{
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 1px 3px $white;
+  background-color: #fff;
+} 
+
+@media only screen and (max-width: 500px) {
+  .rec.rec-arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,241 @@
+@import '../../variables.module.scss';
+
+.footer{
+    color: $yellow;
+    margin-top: 80px;
+    flex-direction: row;
+    position: relative;
+
+    &__wrapper{
+        margin: 44px 0px;
+        justify-content: space-between;
+
+        &__logo{
+            flex-direction: column;
+
+            &_img{
+                width: 224px;
+                height: 84px;
+            }
+
+            &__rights{
+                display: flex;
+                align-items: center;
+                &_img{
+                    width: 12px;
+                    height: 12px;
+                }
+
+                &_year{
+                    font-size: 16px;
+                    margin-left: 4px;
+                }
+
+                &_descr{
+                    font-size: 16px;
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        &__ancor{
+
+            &__list{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+
+                &_element{
+                    margin-left: 22px;
+                    margin-right: 22px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    transition: .5s all;
+                }
+    
+                &_element:hover{
+                    color: #D1CFCF
+                }
+            }
+        }
+    }
+}
+
+.footer::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $yellow;
+}
+
+@media only screen and (max-width: 1400px) {
+    .footer{
+        margin-top: 80px;
+    
+        &__wrapper{
+            margin: 44px 0px;
+            justify-content: space-between;
+    
+            &__logo{
+                flex-direction: column;
+    
+                &_img{
+                    width: 160px;
+                    height: 64px;
+                }
+    
+                &__rights{
+                    display: flex;
+                    &_img{
+                        width: 12px;
+                        height: 12px;
+                    }
+    
+                    &_year{
+                        font-size: 12px;
+                        margin-left: 4px;
+                    }
+    
+                    &_descr{
+                        font-size: 12px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+    
+            &__ancor{
+    
+                &__list{
+    
+                    &_element{
+                        margin-left: 16px;
+                        margin-right: 16px;
+                        cursor: pointer;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer{
+        margin-top: 80px;
+    
+        &__wrapper{
+            margin: 24px 0px;
+            justify-content: space-between;
+    
+            &__logo{
+                flex-direction: column;
+    
+                &_img{
+                    width: 120px;
+                    height: 64px;
+                }
+    
+                &__rights{
+                    display: none;
+                }
+            }
+    
+            &__ancor{
+    
+                &__list{
+                    padding: 0px;
+                    &_element{
+                        margin-left: 12px;
+                        margin-right: 12px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        margin-top: 40px;
+    
+        &__wrapper{
+
+            margin: 24px 0px;
+            justify-content: space-between;
+            align-items: center;
+    
+            &__logo{
+                flex-direction: column;
+    
+                &_img{
+                    width: 120px;
+                    height: 64px;
+                }
+    
+                &__rights{
+                    display: flex;
+                }
+            }
+    
+            &__ancor{
+    
+                &__list{
+                    flex-direction: column;
+                    padding: 0px;
+                    &_element{
+                        margin: 10px 0px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer{
+        margin-top: 40px;
+    
+        &__wrapper{
+
+            margin: 24px 0px;
+            justify-content: space-between;
+            align-items: center;
+    
+            &__logo{
+                flex-direction: column;
+    
+                &_img{
+                    width: 120px;
+                    height: 64px;
+                }
+    
+                &__rights{
+                    display: flex;
+
+                    &_descr{
+                        font-size: 10px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+    
+            &__ancor{
+    
+                &__list{
+                    flex-direction: column;
+                    padding: 0px;
+                    &_element{
+                        margin: 10px 0px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+@import '../../variables.module.scss';
+.item{
+    width: 100%;
+    min-height: 120px;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: column;
+
+    &_img{
+        width: 40%;
+        // height: 400px;
+    }
+
+    &__wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+
+        &_name{
+            font-size: 24px;
+            margin-top: 24px;
+        }
+
+        &_text{
+            margin: 24px 0px;
+            font-size: 16px;
+        }
+
+        &__social{
+
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $yellow;
+            border-radius: 50px;
+
+            &_img{
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .item{
+    
+        &_img{
+            width: 50%;
+            // height: 400px;
+        }
+    
+        &__wrapper{
+    
+            &_name{
+                font-size: 22px;
+                margin-top: 20px;
+            }
+    
+            &_text{
+                margin: 24px 0px;
+                font-size: 15px;
+            }
+    
+            &__social{
+    
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $yellow;
+                border-radius: 50px;
+    
+                &_img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item{
+    
+        &_img{
+            width: 80%;
+        }
+    
+        &__wrapper{
+    
+            &_name{
+                font-size: 18px;
+                margin-top: 20px;
+            }
+    
+            &_text{
+                margin: 24px 0px;
+                font-size: 14px;
+            }
+    
+            &__social{
+    
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $yellow;
+                border-radius: 50px;
+    
+                &_img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}

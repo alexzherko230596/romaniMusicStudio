@@ -1,0 +1,87 @@
+@import '../../variables.module.scss';
+
+.title{
+    font-size: 36px;
+    color: $yellow;
+    margin: 0 auto;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title::before{
+    content: '';
+    width: 222px;
+    height: 1px;
+    background-color: $yellow;
+    position: absolute;
+    top: 0;
+    left: -177px;
+}
+
+.title::after{
+    content: '';
+    width: 222px;
+    height: 1px;
+    background-color: $yellow;
+    position: absolute;
+    bottom: 0;
+    right: -177px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .title{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 24px;
+    }
+
+    .title::before{
+        content: '';
+        width: 160px;
+        height: 1px;
+        background-color: $yellow;
+        position: absolute;
+        top: 0;
+        left: -137px;
+    }
+    
+    .title::after{
+        content: '';
+        width: 160px;
+        height: 1px;
+        background-color: $yellow;
+        position: absolute;
+        bottom: 0;
+        right: -137px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title{
+        font-size: 20px;
+    }
+
+    .title::before{
+        content: '';
+        width: 80px;
+        height: 1px;
+        background-color: $yellow;
+        position: absolute;
+        top: 0;
+        left: -70px;
+    }
+    
+    .title::after{
+        content: '';
+        width: 80px;
+        height: 1px;
+        background-color: $yellow;
+        position: absolute;
+        bottom: 0;
+        right: -70px;
+    }
+}
