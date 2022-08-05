@@ -63,7 +63,7 @@ const FirstLesson = () => {
                        <input 
                            className={classes.lesson__wrapper__form_name}
                            type={'text'} 
-                           placeholder={"Enter your name"}
+                           placeholder={"Ваше имя"}
                            maxLength={25}
                            value = {inputName}
                            autoComplete="off"
@@ -72,7 +72,7 @@ const FirstLesson = () => {
                        <input 
                            className={classes.lesson__wrapper__form_name}
                            type={'text'} 
-                           placeholder={"Enter your phone number"}
+                           placeholder={"Номер мобильного телефона"}
                            autoComplete="off" 
                            value = {inputPhone}
                            name="number" 
