@@ -22,6 +22,7 @@
         &_img{
             height: 84px;
             width: 224px;
+            display: flex;
         }
 
         &__list{
@@ -78,6 +79,7 @@
             &_img{
                 height: 64px;
                 width: 200px;
+                display: flex;
             }
     
             &__list{
@@ -199,6 +201,7 @@
 
                 &_img{
                     width: 180px;
+                    display: flex;
                 }
                 &__list{
 
