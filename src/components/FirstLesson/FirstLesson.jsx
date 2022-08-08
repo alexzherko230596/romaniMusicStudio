@@ -6,12 +6,14 @@ import telegram from '../../img/telegram.svg'
 import facebook from '../../img/facebook.svg'
 import instagram from '../../img/instagram.svg'
 
-const FirstLesson = () => {
+const FirstLesson = (props) => {
     const [inputName, setInputName] = useState('')
     const [inputPhone, setInputPhone] = useState('')
     const [isDisabled, setDisabled] = useState(true)
     const [isEmailUnsend, setEmailUnsend] = useState(true)
     const [isErrorPhone, setErrorPhone] = useState(false)
+    const [errorText, setErrorText] = useState('')
+    const [sendingForm, setSendingForm] = useState(false)
     var regExPhoneNumber = /^\+?[0-9]{3}-?[0-9]{6,12}$/;
     useEffect(() => {
         if(inputName && inputPhone){
@@ -31,20 +33,23 @@ const FirstLesson = () => {
 
     const handleSendForm = (e) => {
         e.preventDefault();
+        setEmailUnsend(false)
+        setSendingForm(true)
         if(regExPhoneNumber.test(inputPhone)){
-            console.log('sending')
-            // emailjs.sendForm('service_kwgk1rc', 'template_pekporr', e.target, 'bb1bXokpE7uxisysC')
-            // emailjs.sendForm('service_kwgk1rc', process.env.REACT_APP_MESSAGE_TEMPLATE, e.target, 'bb1bXokpE7uxisysC')
             emailjs.sendForm(process.env.REACT_APP_MAIL_TEMPLATE, process.env.REACT_APP_MESSAGE_TEMPLATE, e.target, process.env.REACT_APP_USER_NAME)
               .then((result) => {
-                  console.log(result.text);
-                  setEmailUnsend(false)
+                //   console.log(result.text);
+                setSendingForm(false)
               }, (error) => {
-                  console.log(error.text);
+                //   console.log(error.text);
+                  setSendingForm(false)
+                  setErrorText('Непредвиденная ошибка. Повторите попытку позже')
+                  setErrorPhone(true)
+                  setInputPhone('')
               });
         }
         else{
-            console.log('doesnt send form')
+            setErrorText('Ошибка. Пример правильного ввода "+48123456789"')
             setErrorPhone(true)
             setInputPhone('')
         }
@@ -78,15 +83,24 @@ const FirstLesson = () => {
                            name="number" 
                            onChange={(e) => handleInput(setInputPhone, e)}/>
                        <div className={isErrorPhone ? `${classes.lesson__wrapper__form__styleError} ${classes.lesson__wrapper__form_showError}` : classes.lesson__wrapper__form__styleError}>
-                           <p>Ошибка. Пример правильного ввода "+48123456789"</p>
+                           <p>{errorText}</p>
                        </div>
                        <button type = 'submit' className={classes.lesson__wrapper__form_btn} disabled={isDisabled}>Записаться на первое занятие</button>
                    </form>
                         :
-                        <div className={classes.lesson__wrapper__form__sendForm}> 
-                            <p className={classes.lesson__wrapper__form__sendForm_greeting}>Спасибо</p>
-                            <p className={classes.lesson__wrapper__form__sendForm_info}>Наши специалисты свяжутся с вами в ближайшее время по указанному вами номеру телефона <span>{inputPhone}</span></p>
+                        sendingForm
+                        ?
+                        <div className={classes.lesson__wrapper__form__sendForm}>
+                            <div className={classes.lesson__loading}/>
                         </div>
+                        :
+                        <div className={classes.lesson__wrapper__form__sendForm}>
+                            <div className={classes.lesson__wrapper__form__sendForm_active}>
+                                <p className={classes.lesson__wrapper__form__sendForm_greeting}>Спасибо</p>
+                                <p className={classes.lesson__wrapper__form__sendForm_info}>Наши специалисты свяжутся с вами в ближайшее время по указанному вами номеру телефона <span>{inputPhone}</span></p>
+                            </div> 
+                        </div>
+                        
                         }
                         <div className={classes.lesson__wrapper__form_devider}/>
                         <p className={classes.lesson__wrapper__form_descr}>Или напишите нам</p>

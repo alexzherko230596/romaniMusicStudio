@@ -4,7 +4,6 @@ import instagram from '../../img/instagram.svg'
 import facebook from '../../img/facebook.svg'
 
 const MobileFeedbackList = (props) => {
-    console.log(props)
     return(
         <div className={classes.item}>
             <img src = {props.img} alt = {props.alt} className = {classes.item_img}/>

@@ -111,13 +111,20 @@
             }
             &__sendForm{
                 height: 255px;
-                background-color: rgba(195, 159, 107, 0.8);
                 margin-top: 24px;
                 border-radius: 50px;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                color: $white;
+
+                &_active{
+                    background-color: rgba(195, 159, 107, 0.8);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    height: 255px;
+                    border-radius: 50px;
+                }
 
                 &_greeting{
                     font-size: 32px;
@@ -140,6 +147,27 @@
                 }
             }
         }
+    }
+
+    &__loading{
+        margin: 0 auto;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #C99F62;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 }
 
