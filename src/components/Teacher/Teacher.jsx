@@ -37,7 +37,7 @@ const Teacher = () => {
                             </div>
                             <div className={classes.teacher__wrapper__block__text__wrapper}>
                                 <img src={checkMark} className = {classes.teacher__wrapper__block__text__wrapper_img} alt = 'Check mark'/>
-                                <p>Победитель многих международних соревнований</p>
+                                <p>Победитель многих международных конкурсов</p>
                             </div>
                         </div>
                         <div style={{position: 'relative'}}>
