@@ -64,29 +64,30 @@ const FirstLesson = (props) => {
                         <p className={classes.lesson__wrapper__form_title}>Записаться на первое занятие</p>
                        {isEmailUnsend
                        ?
-                       <form style = {{flexDirection: 'column', display: 'flex', alignItems: 'center'}} onSubmit={handleSendForm}>
-                       <input 
-                           className={classes.lesson__wrapper__form_name}
-                           type={'text'} 
-                           placeholder={"Ваше имя"}
-                           maxLength={25}
-                           value = {inputName}
-                           autoComplete="off"
-                           name="name" 
-                           onChange={(e) => handleInput(setInputName, e)}/>
-                       <input 
-                           className={classes.lesson__wrapper__form_name}
-                           type={'text'} 
-                           placeholder={"Номер мобильного телефона"}
-                           autoComplete="off" 
-                           value = {inputPhone}
-                           name="number" 
-                           onChange={(e) => handleInput(setInputPhone, e)}/>
-                       <div className={isErrorPhone ? `${classes.lesson__wrapper__form__styleError} ${classes.lesson__wrapper__form_showError}` : classes.lesson__wrapper__form__styleError}>
-                           <p>{errorText}</p>
-                       </div>
-                       <button type = 'submit' className={classes.lesson__wrapper__form_btn} disabled={isDisabled}>Записаться на первое занятие</button>
-                   </form>
+                        <form style = {{flexDirection: 'column', display: 'flex', alignItems: 'center'}} onSubmit={handleSendForm}>
+                            <input 
+                                className={classes.lesson__wrapper__form_name}
+                                type={'text'} 
+                                placeholder={"Ваше имя"}
+                                maxLength={25}
+                                value = {inputName}
+                                autoComplete="off"
+                                name="name" 
+                                onChange={(e) => handleInput(setInputName, e)}
+                                />
+                            <input 
+                                className={classes.lesson__wrapper__form_name}
+                                type={'text'} 
+                                placeholder={"Номер мобильного телефона"}
+                                autoComplete="off" 
+                                value = {inputPhone}
+                                name="number" 
+                                onChange={(e) => handleInput(setInputPhone, e)}/>
+                            <div className={isErrorPhone ? `${classes.lesson__wrapper__form__styleError} ${classes.lesson__wrapper__form_showError}` : classes.lesson__wrapper__form__styleError}>
+                                <p>{errorText}</p>
+                            </div>
+                            <button type = 'submit' className={classes.lesson__wrapper__form_btn} disabled={isDisabled}>Записаться на первое занятие</button>
+                        </form>
                         :
                         sendingForm
                         ?

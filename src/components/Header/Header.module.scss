@@ -31,12 +31,17 @@
             flex-direction: row;
 
             &_item{
-                margin-left: 22px;
-                margin-right: 22px;
+                margin-left: 20px;
+                margin-right: 20px;
                 cursor: pointer;
                 color: $white;
-                font-size: 22px;
+                font-size: 21px;
                 transition: .5s all;
+
+                &_link{
+                    text-decoration: none;
+                    color: #d1cfcf;
+                }
             }
 
             &_item:hover{
@@ -90,6 +95,26 @@
                     cursor: pointer;
                     color: $white;
                     font-size: 20px;
+                    transition: .5s all;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .header{
+    
+        &__wrapper{
+    
+            &__list{
+    
+                &_item{
+                    margin-left: 14px;
+                    margin-right: 14px;
+                    cursor: pointer;
+                    color: $white;
+                    font-size: 18px;
                     transition: .5s all;
                 }
             }
@@ -215,6 +240,12 @@
                         color: $white;
                         font-size: 22px;
                         margin: 16px 0px;
+
+                        &_link{
+                            text-decoration: none;
+                            color: #d1cfcf;
+                            margin: 16px 0px;
+                        }
                     }
                 }
                 &__social{

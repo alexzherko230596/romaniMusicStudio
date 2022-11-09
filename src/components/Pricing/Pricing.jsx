@@ -73,9 +73,9 @@ const Pricing = () => {
                                         <div className={classes.price__wrapper__sign__adults__pricing__item__mobile}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 180 злотых <br/>
-                                                6 занятия - 260 злотых  <br/>
-                                                8 занятий - 360 злотых  <br/>
+                                                4 занятия  - 200 злотых <br/>
+                                                6 занятия - 290 злотых  <br/>
+                                                8 занятий - 380 злотых  <br/>
                                             </p>
                                         </div>
                                     </div>
@@ -161,14 +161,14 @@ const Pricing = () => {
                                 <p className={classes.price__wrapper__sign__adults_program}>Возрастная категория:</p>
                                 <div className={classes.price__wrapper__theater__category}>
                                     <div className={classes.price__wrapper__theater__category__block}>
-                                        <p className={classes.price__wrapper__sign__adults_title}>7 - 11 лет </p>
+                                        <p className={classes.price__wrapper__sign__adults_title}>5 - 16 лет </p>
                                         <p className={classes.price__wrapper__sign__adults_descr}>
-                                            Занятия два раза в неделю длительностью полтора часа.<br/>
+                                            Занятия два раза в неделю длительностью 60 минут<br/>
                                             <br/>
-                                            Среда 19.00-20.00<br/>
-                                            Суббота 11.00-12.00
+                                            Среда 19.00-20.00<br/><br/>
+                                            Суббота 18.00-19.00
                                         </p>
-                                        <p className={classes.price__wrapper__sign__adults_firstLesson}>Первое занятие - бесплатно</p>
+                                        {/* <p className={classes.price__wrapper__sign__adults_firstLesson}>Первое занятие - бесплатно</p>
                                         <p className={classes.price__wrapper__sign__adults_priceLesson}>1 занятие</p>
                                         <p className={classes.price__wrapper__sign__adults_amountLesson}>
                                             90 минут  - 40 злотых
@@ -176,9 +176,9 @@ const Pricing = () => {
                                         <p className={classes.price__wrapper__sign__adults_priceLesson}>Абонемент</p>
                                         <p className={classes.price__wrapper__sign__adults_amountLesson}>
                                         8 занятий - 280 злотых 
-                                        </p>
+                                        </p> */}
                                     </div>
-    
+{/*     
                                 <div className={`${classes.price__wrapper__theater__category__block} ${classes.price__wrapper__theater__category__blockLast}`}>
                                     <p className={classes.price__wrapper__sign__adults_title}>12 - 17 лет</p>
                                     <p className={classes.price__wrapper__sign__adults_descr}>
@@ -198,7 +198,7 @@ const Pricing = () => {
                                         8 занятий - 260 злотых  
                                     </p>
                                 </div>
-                                <div  className={classes.price__wrapper__theater__category_devider}/>
+                                <div  className={classes.price__wrapper__theater__category_devider}/> */}
                             </div>
                         </div>
                         }

@@ -12,16 +12,33 @@ const Header = () => {
     const [isBurgerMenu, setBurgerMenu] = useState(true)
 
     const handleBurger = () => {
+        const $body = document.querySelector('body');
+        let scrollPosition = 0;
         if(isBurgerMenu){
+            scrollPosition = window.pageYOffset;
             document.body.style.overflow = "hidden"
+            $body.style.position = 'fixed';
+            $body.style.top = `-${scrollPosition}px`;
+            $body.style.width = '100%';
+            //-webkit-overflow-scrolling: touch;
         }
         else{
             document.body.style.overflow = "visible"
+            $body.style.removeProperty('position');
+            $body.style.removeProperty('top');
+            $body.style.removeProperty('width');
+            window.scrollTo(0, scrollPosition);
         }
         setBurgerMenu(prev => !prev)
     }
 
     const handleAnhor = () => {
+        const $body = document.querySelector('body');
+        let scrollPosition = 0;
+        $body.style.removeProperty('position');
+        $body.style.removeProperty('top');
+        $body.style.removeProperty('width');
+        window.scrollTo(0, scrollPosition);
         document.body.style.overflow = "visible"
         setBurgerMenu(true)
     }
@@ -83,6 +100,9 @@ const Header = () => {
                                 duration={500}>
                                 Карта
                             </Link>
+                        </li>
+                        <li className={classes.header__wrapper__list_item}>
+                            <a href="https://admin.romanistudio.art/" target="_blank" rel="noreferrer" className={classes.header__wrapper__list_item_link}>Уроки</a>
                         </li>
                     </ul>
                     <div className={classes.header__wrapper__languages}>
@@ -154,6 +174,9 @@ const Header = () => {
                                 duration={500}>
                                 Карта
                             </Link>
+                        </li>
+                        <li className={classes.header__mobileMenu__wrapper__list_item}>
+                            <a href="https://admin.romanistudio.art/" target="_blank" rel="noreferrer" className={classes.header__mobileMenu__wrapper__list_item_link}>Уроки</a>
                         </li>
                     </ul>
                     <div className={classes.header__mobileMenu__wrapper__social}>
