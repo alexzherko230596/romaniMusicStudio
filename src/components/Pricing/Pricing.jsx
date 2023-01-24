@@ -49,33 +49,33 @@ const Pricing = () => {
                                         <br/>
                                         А так же подготовка вокальных номеров для праздников и событий.
                                     </p>
-                                    <p className={classes.price__wrapper__sign__adults_firstLesson}>Первое занятие - 30 злотых</p>
+                                    <p className={classes.price__wrapper__sign__adults_firstLesson}>Первое занятие - 40 злотых</p>
                                     <div className={classes.price__wrapper__sign__adults__pricing}>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>1 занятие</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                45 минут  - 55 злотых<br/>
-                                                60 минут - 65 злотых 
+                                                45 минут  - 65 злотых<br/>
+                                                60 минут - 75 злотых 
                                             </p>
                                         </div>
                                         <div className={`${classes.price__wrapper__sign__adults__pricing__item} ${classes.price__wrapper__sign__adults__pricing__item__mobileHide}`}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 200 злотых <br/>
-                                                6 занятия - 290 злотых  <br/>
-                                                8 занятий - 380 злотых  <br/>
+                                                4 занятия  - 230 злотых <br/>
+                                                6 занятия - 330 злотых  <br/>
+                                                8 занятий - 430 злотых  <br/>
                                             </p>
                                         </div>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Групповые занятия</p>
-                                            <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>60 минут - 40 злотых</p>
+                                            <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>60 минут - 45 злотых</p>
                                         </div>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item__mobile}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 200 злотых <br/>
-                                                6 занятия - 290 злотых  <br/>
-                                                8 занятий - 380 злотых  <br/>
+                                                4 занятия  - 230 злотых <br/>
+                                                6 занятия - 330 злотых  <br/>
+                                                8 занятий - 430 злотых  <br/>
                                             </p>
                                         </div>
                                     </div>
@@ -97,21 +97,21 @@ const Pricing = () => {
                                         - развитие красивого и сильного детского голоса;<br/>
                                         - знакомство ребенка с музыкальной культурой.
                                     </p>
-                                    <p className={`${classes.price__wrapper__sign__adults_firstLesson} ${classes.price__wrapper__sign__adults_firstLesson_topDistance}`}>Первое занятие - 30 злотых</p>
+                                    <p className={`${classes.price__wrapper__sign__adults_firstLesson} ${classes.price__wrapper__sign__adults_firstLesson_topDistance}`}>Первое занятие - 40 злотых</p>
                                     <div className={classes.price__wrapper__sign__adults__pricing}>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>1 занятие</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                45 минут  - 50 злотых<br/>
-                                                60 минут - 60 злотых 
+                                                45 минут  - 60 злотых<br/>
+                                                60 минут - 70 злотых 
                                             </p>
                                         </div>
                                         <div className={`${classes.price__wrapper__sign__adults__pricing__item} ${classes.price__wrapper__sign__adults__pricing__item__mobileHide}`}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 180 злотых <br/>
-                                                6 занятия - 260 злотых  <br/>
-                                                8 занятий - 360 злотых  <br/>
+                                                4 занятия  - 220 злотых <br/>
+                                                6 занятия - 315 злотых  <br/>
+                                                8 занятий - 400 злотых  <br/>
                                             </p>
                                         </div>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
@@ -121,9 +121,9 @@ const Pricing = () => {
                                         <div className={classes.price__wrapper__sign__adults__pricing__item__mobile}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 180 злотых <br/>
-                                                6 занятия - 260 злотых  <br/>
-                                                8 занятий - 360 злотых  <br/>
+                                                4 занятия  - 220 злотых <br/>
+                                                6 занятия - 315 злотых  <br/>
+                                                8 занятий - 400 злотых  <br/>
                                             </p>
                                         </div>
                                     </div>

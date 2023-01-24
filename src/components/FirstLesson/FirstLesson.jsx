@@ -38,10 +38,9 @@ const FirstLesson = (props) => {
         if(regExPhoneNumber.test(inputPhone)){
             emailjs.sendForm(process.env.REACT_APP_MAIL_TEMPLATE, process.env.REACT_APP_MESSAGE_TEMPLATE, e.target, process.env.REACT_APP_USER_NAME)
               .then((result) => {
-                //   console.log(result.text);
                 setSendingForm(false)
               }, (error) => {
-                //   console.log(error.text);
+                  console.log(error.text);
                   setSendingForm(false)
                   setErrorText('Непредвиденная ошибка. Повторите попытку позже')
                   setErrorPhone(true)
@@ -49,7 +48,8 @@ const FirstLesson = (props) => {
               });
         }
         else{
-            setErrorText('Ошибка. Пример правильного ввода "+48123456789"')
+            setEmailUnsend(true)
+            setErrorText('Неправильно введен номер телефона. Пример правильного ввода "+48123456789"')
             setErrorPhone(true)
             setInputPhone('')
         }
