@@ -9,7 +9,7 @@ import MobileFeedbackList from "../ItemFeedback/MobileFeedbackList";
 
 const Feedback = () => {
     return(
-        <div className={classes.feedback} id = 'BlockToScrollFeedbacks'>
+        <section className={classes.feedback} id = 'BlockToScrollFeedbacks'>
             <div className="g-container">
                 <TitleBlock title = {'Отзывы'}/>
                 <div  className={classes.feedback__wrapper}>
@@ -32,7 +32,7 @@ const Feedback = () => {
                     </Carousel>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

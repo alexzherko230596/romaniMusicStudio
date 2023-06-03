@@ -40,7 +40,6 @@ const FirstLesson = (props) => {
               .then((result) => {
                 setSendingForm(false)
               }, (error) => {
-                  console.log(error.text);
                   setSendingForm(false)
                   setErrorText('Непредвиденная ошибка. Повторите попытку позже')
                   setErrorPhone(true)
@@ -56,7 +55,7 @@ const FirstLesson = (props) => {
     }
 
     return(
-        <div className={classes.lesson} id = 'BlockToScrollMakeAnAppoitment'>
+        <section className={classes.lesson} id = 'BlockToScrollMakeAnAppoitment'>
             <div className="g-container">
                 <div className={classes.lesson__wrapper}>
                     <img src={lina} alt='Teacher' className={classes.lesson__wrapper_img}/>
@@ -119,7 +118,7 @@ const FirstLesson = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

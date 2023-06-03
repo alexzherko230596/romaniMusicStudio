@@ -6,7 +6,7 @@ import rights from '../../img/rights.svg'
 
 const Footer = () => {
     return(
-        <div className={classes.footer}>
+        <footer className={classes.footer}>
             <div className="g-container">
                 <div className={classes.footer__wrapper}>
                     <div className={classes.footer__wrapper__logo}>
@@ -17,7 +17,7 @@ const Footer = () => {
                             <p className={classes.footer__wrapper__logo__rights_descr}>All rights reserved</p>
                         </div>
                     </div>
-                    <div className={classes.footer__wrapper__ancor}>
+                    <nav className={classes.footer__wrapper__ancor}>
                         <ul className={classes.footer__wrapper__ancor__list}>
                             <li className={classes.footer__wrapper__ancor__list_element}>
                                 <Link
@@ -70,10 +70,10 @@ const Footer = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

@@ -44,9 +44,9 @@ const Header = () => {
     }
 
     return(
-        <div className={classes.header}>
+        <header className={classes.header}>
             <div className="g-container">
-                <div className={classes.header__wrapper}>
+                <nav className={classes.header__wrapper}>
                     <img src={logo} alt='main logo' className={classes.header__wrapper_img}/>
                     <ul className={classes.header__wrapper__list}>
                         <li className={classes.header__wrapper__list_item}>
@@ -109,7 +109,7 @@ const Header = () => {
                         <img src={world} alt='change language' className={classes.header__wrapper__languages_icon}/>
                         <p className={classes.header__wrapper__languages_text}>RUS</p>
                     </div>
-                </div>
+                </nav>
             </div>
             <div className={isBurgerMenu ? `${classes.header__mobileMenu} ${classes.header__mobileMenu_tiny}` : `${classes.header__mobileMenu} ${classes.header__mobileMenu_huge}`} onClick = {handleBurger}>
                 <div className={isBurgerMenu ? classes.header__mobileMenu__burger : `${classes.header__mobileMenu__burger} ${classes.header__mobileMenu_hidden}`}>
@@ -192,7 +192,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

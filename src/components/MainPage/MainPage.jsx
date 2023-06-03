@@ -4,11 +4,11 @@ import classes from './MainPage.module.scss'
 
 const MainPage = () => {
     return(
-        <div className={classes.main}>
+        <section className={classes.main}>
             <div className="g-container">
                 <div className={classes.main__wrapper}>
                     <h1 className={classes.main__wrapper_title}>Вокально-театральная студия <br className={classes.main__wrapper_title_br}/> в варшаве</h1>
-                    <p className={classes.main__wrapper_descr}>Окунись в мир творчества</p>
+                    <h2 className={classes.main__wrapper_descr}>Окунись в мир творчества</h2>
                     <button className={classes.main__wrapper_button}>
                         <Link
                                 to="BlockToScrollMakeAnAppoitment"
@@ -21,7 +21,7 @@ const MainPage = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

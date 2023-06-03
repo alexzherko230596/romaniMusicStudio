@@ -10,24 +10,24 @@ import time from '../../img/time.svg'
 
 const AboutStudio = () => {
     return(
-        <div className={classes.studio} id = 'BlockToScrollAboutStudio'>
+        <section className={classes.studio} id = 'BlockToScrollAboutStudio'>
             <div className="g-container">
                 <TitleBlock title = {'О студии'}/>
                 <div className={classes.studio__wrapper}>
                     <img src = {studio1} alt='Studio Romani' className={classes.studio__wrapper_img}/>
-                    <div className={classes.studio__wrapper__text}>
-                    <p >Вокально-театральная <span>студия Romani - это место, где раскрываются таланты и душа наполняется музыкой.</span></p> 
-                    <p >В нашей студии всегда комфортно и уютно. Место где обитает дружеская обстановка. Сочетание современной тенденции в области вокала, хореографии и театрального искусства. Студия обладает всем необходимым профессиональным оборудованием, для комфортного обучения.</p>
-                    <p > Обучение в студии позволяет продемонстрировать ваш талант с самой привлекательной стороны. Здесь вы <span>полюбите вокал и почувствуете актёрскую игру в себе.</span></p>
-                    </div>
-                    <div className={classes.studio__wrapper__textSecondBlock}>
+                    <article className={classes.studio__wrapper__text}>
+                        <p >Вокально-театральная <span>студия Romani - это место, где раскрываются таланты и душа наполняется музыкой.</span></p> 
+                        <p >В нашей студии всегда комфортно и уютно. Место где обитает дружеская обстановка. Сочетание современной тенденции в области вокала, хореографии и театрального искусства. Студия обладает всем необходимым профессиональным оборудованием, для комфортного обучения.</p>
+                        <p > Обучение в студии позволяет продемонстрировать ваш талант с самой привлекательной стороны. Здесь вы <span>полюбите вокал и почувствуете актёрскую игру в себе.</span></p>
+                    </article>
+                    <article className={classes.studio__wrapper__textSecondBlock}>
                         <img src = {studio2} alt='Studio Romani' className={classes.studio__wrapper__textSecondBlock_img}/>
                         <div className={classes.studio__wrapper__textSecondBlock_text}>
                             <p>Наши уроки это нескучные заучивания песен и актерских  ролей, а стремление понять основы музыкального творчества и самовыражения. </p> 
                             <p><span>Студия Romani </span>уделяет большое внимание выступлениям на публике. Для того чтобы помочь своим ученикам преодолеть психологические барьеры. </p>
                             <p><span>Romani</span> - про твой талант</p>
                         </div>
-                    </div>
+                    </article>
                     <div className={classes.studio__wrapper__background}>
                         <img src = {bg} alt='background' className={classes.studio__wrapper__background_img}/>
                     </div>
@@ -70,7 +70,7 @@ const AboutStudio = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -8,7 +8,7 @@ import telegram from '../../img/telegram.svg'
 
 const Map = () => {
     return(
-        <div className={classes.map} id = 'BlockToScrollMap'>
+        <section className={classes.map} id = 'BlockToScrollMap'>
             <div className="g-container">
                 <TitleBlock title = {'карта'}/>
                 <div className={classes.map__wrapper}>
@@ -50,7 +50,7 @@ const Map = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

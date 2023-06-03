@@ -25,7 +25,6 @@ const ItemFeedback = (props) => {
             temproraryVar =  arrayFeedback.slice(10, 12)
             temproraryVar.push(dataFeedback[0])
             setShowFeedbacks(temproraryVar)
-            console.log(temproraryVar)
             setCurrentAmount(12)
         }
         else if(count === 1 || count === 13) {

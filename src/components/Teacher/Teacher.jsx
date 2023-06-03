@@ -7,7 +7,7 @@ import checkMark from '../../img/checkMark.svg'
 
 const Teacher = () => {
     return(
-        <div className={classes.teacher} id = 'BlockToScrollTeacher'>
+        <section className={classes.teacher} id = 'BlockToScrollTeacher'>
             <div className="g-container">
                 <TitleBlock title = {'преподаватель'}/>
                 <div className={classes.teacher__wrapper}>
@@ -46,7 +46,7 @@ const Teacher = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
