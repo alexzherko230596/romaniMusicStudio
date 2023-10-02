@@ -49,21 +49,21 @@ const Pricing = () => {
                                         <br/>
                                         А так же подготовка вокальных номеров для праздников и событий.
                                     </p>
-                                    <p className={classes.price__wrapper__sign__adults_firstLesson}>Пробное занятие - 55 злотых</p>
+                                    <p className={classes.price__wrapper__sign__adults_firstLesson}>Пробное занятие - 60 злотых</p>
                                     <div className={classes.price__wrapper__sign__adults__pricing}>
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Разовое занятие</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
                                                 {/* 45 минут  - 65 злотых<br/> */}
-                                                45 минут - 80 злотых 
+                                                50 минут - 90 злотых 
                                             </p>
                                         </div>
                                         <div className={`${classes.price__wrapper__sign__adults__pricing__item} ${classes.price__wrapper__sign__adults__pricing__item__mobileHide}`}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 280 злотых <br/>
-                                                8 занятия - 500 злотых  <br/>
-                                                12 занятий - 720 злотых  <br/>
+                                                4 занятия  - 320 злотых <br/>
+                                                6 занятий - 450 злотых  <br/>
+                                                8 занятий - 560 злотых  <br/>
                                             </p>
                                         </div>
                                         {/* <div className={classes.price__wrapper__sign__adults__pricing__item}>
@@ -73,14 +73,14 @@ const Pricing = () => {
                                         <div className={classes.price__wrapper__sign__adults__pricing__item__mobile}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 280 злотых <br/>
-                                                8 занятия - 500 злотых  <br/>
-                                                12 занятий - 720 злотых  <br/>
+                                                4 занятия  - 320 злотых <br/>
+                                                6 занятий - 450 злотых  <br/>
+                                                8 занятий - 560 злотых  <br/>
                                             </p>
                                         </div>
                                     </div>
                                     <p className={classes.price__wrapper__sign__adults_afterAll}>Длительность  50 минут</p>
-                                    <p className={classes.price__wrapper__sign__adults_afterAll}>Абонементы действуют 31 календарных дней - 4 и 8 занятий. <br/>1.5 месяца - 12 занятий</p>
+                                    <p className={classes.price__wrapper__sign__adults_afterAll}>Абонементы действуют 31 календарных дней - 4 и 6 занятий. <br/>1.5 месяца - 8 занятий</p>
                                 </div>
                             :
 
@@ -102,16 +102,16 @@ const Pricing = () => {
                                         <div className={classes.price__wrapper__sign__adults__pricing__item}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Разовое занятие</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                45 минут  - 65 злотых<br/>
+                                                45 минут  - 70 злотых<br/>
                                                 {/* 60 минут - 70 злотых  */}
                                             </p>
                                         </div>
                                         <div className={`${classes.price__wrapper__sign__adults__pricing__item} ${classes.price__wrapper__sign__adults__pricing__item__mobileHide}`}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 240 злотых <br/>
-                                                8 занятия - 440 злотых  <br/>
-                                                12 занятий - 600 злотых  <br/>
+                                                4 занятия  - 260 злотых <br/>
+                                                6 занятий - 360 злотых  <br/>
+                                                8 занятий - 440 злотых  <br/>
                                             </p>
                                         </div>
                                         {/* <div className={classes.price__wrapper__sign__adults__pricing__item}>
@@ -121,14 +121,14 @@ const Pricing = () => {
                                         <div className={classes.price__wrapper__sign__adults__pricing__item__mobile}>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_priceLesson}>Абонемент</p>
                                             <p className={classes.price__wrapper__sign__adults__pricing__item_amountLesson}>
-                                                4 занятия  - 240 злотых <br/>
-                                                8 занятия - 440 злотых  <br/>
-                                                12 занятий - 600 злотых  <br/>
+                                                4 занятия  - 260 злотых <br/>
+                                                6 занятий - 360 злотых  <br/>
+                                                8 занятий - 440 злотых  <br/>
                                             </p>
                                         </div>
                                     </div>
                                     <p className={classes.price__wrapper__sign__adults_afterAll}>Длительность  45 минут</p>
-                                    <p className={classes.price__wrapper__sign__adults_afterAll}>Абонементы действуют 31 календарных дней - 4 и 8 занятий. <br/>1.5 месяца - 12 занятий </p>
+                                    <p className={classes.price__wrapper__sign__adults_afterAll}>Абонементы действуют 31 календарных дней - 4 и 6 занятий. <br/>1.5 месяца - 8 занятий </p>
                                 </div>
                             :
                             <div className={classes.price__wrapper__theater_mobile}>
